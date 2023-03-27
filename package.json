@@ -6,10 +6,14 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs",
+    "astro": "astro",
+    "deno-deploy": "astro build && deployctl deploy --project=astropeter --no-static --include=./dist ./dist/server/entry.mjs"
   },
   "dependencies": {
-    "astro": "^2.1.5"
+    "@astrojs/deno": "^4.1.0",
+    "@astrojs/tailwind": "^3.1.1",
+    "astro": "^2.1.7",
+    "tailwindcss": "^3.2.7"
   }
 }
