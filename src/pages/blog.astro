@@ -3,15 +3,13 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Welcome to about Astro">
   <main>
-    <h1 class="text-5xl font-bold text-zinc-300">
+    <h1 class="text-5xl text-center font-bold text-zinc-300">
       Welcome to <br />
-      <!--why cant we just escape characters with "\" ?-->
       <span
         class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-indigo-500"
-      >
-        &lt; Peter's Astro /&gt;</span
+        >Peter's Blog page</span
       >
     </h1>
     <p class="instructions">
@@ -19,29 +17,8 @@ import Card from "../components/Card.astro";
       />
       <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
     </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
-    </ul>
     <h2>is this Working as expected</h2>
+    <a href="/posts/post-1">first post</a>
   </main>
 </Layout>
 
